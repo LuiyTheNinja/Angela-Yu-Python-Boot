@@ -1,0 +1,1 @@
+user_input = input("What do you choose? Type 0 for Rock, Type 1 for Paper or Type 2 for Scissors.\n")
