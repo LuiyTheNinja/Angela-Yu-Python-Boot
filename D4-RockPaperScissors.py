@@ -8,3 +8,5 @@ elif user_input == "1":
 else:
     print("You chose Scissors.")
 # Temporary code to display the user's choice
+
+# TODO: Write code to generate a random choice for the computer | Include ASCI Art for player and computer choices. | Determine winner 
