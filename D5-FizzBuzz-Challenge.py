@@ -29,3 +29,15 @@ for num in range(1, 101):
 
 # BONUS: Combine the above into one Function
 
+def fizzbuzz():
+    for num in range(1, 101):
+        if num % 3 == 0:
+            print("Fuzz")
+        if num % 5 == 0:
+            print("Buzz")
+        if num % 3 and num % 5 == 0:
+            print("FizzBuzz")
+        else:
+            print(num)
+
+fizzbuzz()
