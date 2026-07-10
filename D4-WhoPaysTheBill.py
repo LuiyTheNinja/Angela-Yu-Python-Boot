@@ -1,7 +1,10 @@
-import random
 # Challenge: Using provided friends list. 
 # Print out a random one of the names
 # Each time, code runs, a different name should be printed. 
+
+
+import random
+
 
 friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
 
