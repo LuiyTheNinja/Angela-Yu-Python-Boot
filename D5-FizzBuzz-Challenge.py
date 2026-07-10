@@ -3,6 +3,11 @@ print(list(range(1, 101)))
 
 # But when the number is devisible by 3, print "Fizz" instead of the number.
 
+for num in range(1, 101):
+    if num % 3 == 0:
+        print("Fizz")
+    else:
+        print(num)
 
 # When the number is divisible by 5, print "Buzz" instead of the number.
 
