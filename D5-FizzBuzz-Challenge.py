@@ -11,8 +11,21 @@ for num in range(1, 101):
 
 # When the number is divisible by 5, print "Buzz" instead of the number.
 
+for num in range(1, 101):
+    if num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
 
 # And if the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
 
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    else:
+        print(num)
 
 # Early example result: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz
+
+# BONUS: Combine the above into one Function
+
