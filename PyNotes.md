@@ -29,3 +29,14 @@ dirty_dozen = [fruits, vegetables]
 # for loop in Python lists.
 
 for item in list_of_items:
+
+# sum() allows input of any iterable data type including lists.
+
+# Range function - used to generate a range of numbers to loop through
+
+for number in range(a, b):
+print(number)
+
+range(a, b, step) will not work on it's own, must be used with another function like above.
+last digit won't be included.
+the step argument is optional, but without, range iterates by 1.
