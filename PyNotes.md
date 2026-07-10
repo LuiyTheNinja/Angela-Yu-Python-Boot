@@ -25,3 +25,7 @@ my_list.extend(["item5", "item6"]) # Adds multiple items to the end
 fruits = ['apple', 'banana']
 vegetables = ['spinach']
 dirty_dozen = [fruits, vegetables]
+
+# for loop in Python lists.
+
+for item in list_of_items:
