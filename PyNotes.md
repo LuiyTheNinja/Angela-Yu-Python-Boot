@@ -1,0 +1,27 @@
+📝 Part 1: Python Study Notes (Extracted)🎲 Random ModuleMersenne Twister: Python uses the Mersenne Twister algorithm as its core generator for the random module.random.randint(a, b): Generates a random integer between $a$ and $b$ (inclusive).random.random(): Generates a random float between 0.0 and 1.0 (exclusive of 1.0).Tip: Multiply the result to increase the range (e.g., random.random() \* 10 yields floats between 0 and 10).random.uniform(a, b): Generates a floating-point number between $a$ and $b$ (inclusive/favors upper bound depending on rounding).📦 Code ModularizationTo split code up into individual files and use them elsewhere:Pythonimport filename # Do not include the .py extension
+
+# Call specific functions or variables using dot notation:
+
+print(filename.my_favourite_number)
+📋 Working with ListsPython# Initialization and Modification
+my_list = ["item1", "item2"]
+my_list[1] = "item3" # Replaces "item2" with "item3" (Index 1)
+
+# Adding Items
+
+my_list.append("item4") # Adds a single item to the end
+my_list.extend(["item5", "item6"]) # Adds multiple items to the end
+
+# Index & "Off-by-One" Errors
+
+# If a list has 50 items, len(list) is 50, but the maximum index is 49.
+
+# incorrect: print(my_list[len(my_list)]) -> Throws IndexError
+
+# correct: print(my_list[len(my_list) - 1])
+
+# Nested Lists (Lists within Lists)
+
+fruits = ['apple', 'banana']
+vegetables = ['spinach']
+dirty_dozen = [fruits, vegetables]
