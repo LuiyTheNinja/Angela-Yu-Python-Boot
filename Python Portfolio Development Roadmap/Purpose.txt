@@ -1,0 +1,122 @@
+This roadmap was/is designed to help me learn, based on some feedback, I receive in 
+some reddit threads, and from colleagues. 
+
+This roadmap is designed to help me learn:
+
+Python development
+Software development lifecycle (SDLC)
+Git & GitHub workflows
+Documentation
+Version control
+Testing
+Networking concepts
+Cybersecurity concepts
+AWS administration
+Linux administration
+Bash scripting
+PowerShell scripting
+Project planning and architecture
+
+Every project should be treated as a real software project, not just a coding exercise.
+
+Standard development Workflow
+
+Step 1. Define Requirements
+What problem does this solve?
+Who is the user?
+What is the minimum viable product(MVP)?
+What features can be added later?
+
+Step 2. Project planning
+Requirements
+Feature List
+Project Scope
+Roadmap
+Known Limitations
+# Create flowcharts or diagrams for major functionality. 
+Example:
+User
+ ↓
+CLI Interface
+ ↓
+Python Functions
+ ↓
+JSON Storage
+ ↓
+Reports
+
+Step 3. Repository Structure
+project-name/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── docs/
+│   ├── requirements.md
+│   ├── architecture.md
+│   ├── roadmap.md
+│   └── changelog.md
+│
+├── src/
+│
+├── tests/
+│
+└── data/
+
+Step 4. git Workflow
+branches
+ - main
+ - development
+ - feature/*
+Example:
+feature-json-storage
+feature-export-reports
+feature-monitoring
+feature-alerting
+
+Step 5. Issue Tracking
+Create Github Issues for every feature.
+
+Example: #1 Create CLI
+
+#2 Add JSON storage
+
+#3 Add reporting
+
+#4 Write tests
+
+#5 Create README
+
+Step 6. Versioning
+v0.1.0
+
+v0.2.0
+
+v0.3.0
+
+v1.0.0
+
+Guidelines for Versioning.
+Major = Breaking changes
+Minor = New features
+Patch = Bug fixes
+
+Step 7. Documentation
+Every project should include
+README.md
+
+Installation Instructions
+
+Usage Examples
+
+Architecture Documentation
+
+Roadmap
+
+Changelog
+
+Future Improvements
+
+To see my Project Roadmap - Go here!
