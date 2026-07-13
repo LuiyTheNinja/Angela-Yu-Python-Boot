@@ -1,7 +1,10 @@
-print("Welcome to the PyPassword Generator!")
-num_letters = input("How many letters would you like in your password?")
-num_symbols = input("How man symbols would you like in your password?")
-num_numbers = input("How many numers would you like in your password?")
+import random
+
+print("Welcome to the Password Generator!")
+
+num_letters = int(input("How many letters would you like in your password? "))
+num_symbols = int(input("How many symbols would you like in your password? "))
+num_numbers = int(input("How many numbers would you like in your password? "))
 
 letters = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
@@ -13,34 +16,51 @@ letters = [
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
-# IS there not an import for this?? Surely?? 
 
-# TODO: 
-# Then Add randomization | and Maybe total length(characters?)
-# Add a Salting Function, and then hashing algorithm. 
-# Maybe add a function to tell user, how long it would take to crack their password?
+password_chars = []
 
-final_pass = num_letters + num_symbols + num_numbers
+for _ in range(num_letters):
+    password_chars.append(random.choice(letters))
 
-def pass_standard_check(letters, numbers, symbols, final_pass):
-    if letters > 3:
-        print("Add more letters!")
-    if numbers > 3:
-        print("Add more numbers!")
-    if symbols > 3:
-        print("Add more symbols")
-    if len(final_pass) > 12:
-        print("Your password does not contain enough characters, \n " \
-        "Please select a minium of 12")
-    else:
-        return(f"Your unscrambled password is {final_pass}")
+for _ in range(num_symbols):
+    password_chars.append(random.choice(symbols))
 
-scramble = input("Would you like to scramble your password for increased security? Y or N")
+for _ in range(num_numbers):
+    password_chars.append(random.choice(numbers))
 
-def scramble_pass():
-    if scramble == "Y":
-        print("!!!!!!!!!!!!!!!!!!!!!!!!")
-        # TODO: Scrambling happens here. 
+unscrambled_password = "".join(password_chars)
 
+def pass_standard_check(letter_count, number_count, symbol_count, password):
+    if letter_count < 4:
+        print("Consider adding more letters.")
 
-print(f"Your scrambled pass word is {scramble}")
+    if number_count < 4:
+        print("Consider adding more numbers.")
+
+    if symbol_count < 4:
+        print("Consider adding more symbols.")
+
+    if len(password) < 12:
+        print("Warning: Password should be at least 12 characters long.")
+
+    print(f"Your unscrambled password is: {password}")
+
+pass_standard_check(
+    num_letters,
+    num_numbers,
+    num_symbols,
+    unscrambled_password
+)
+
+scramble = input(
+    "Would you like to scramble your password for increased security? (Y/N) "
+).upper()
+
+if scramble == "Y":
+    random.shuffle(password_chars)
+    scrambled_password = "".join(password_chars)
+    print(f"Your scrambled password is: {scrambled_password}")
+else:
+    print(f"Your password is: {unscrambled_password}")
+
+#TODO: Add Salting | Add Maximum character limit? | Add Hasing algorithm
