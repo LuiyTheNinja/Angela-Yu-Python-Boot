@@ -22,7 +22,7 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 final_pass = num_letters + num_symbols + num_numbers
 
-def Pass_Standard_check(letters, numbers, symbols, final_pass):
+def pass_standard_check(letters, numbers, symbols, final_pass):
     if letters > 3:
         print("Add more letters!")
     if numbers > 3:
@@ -36,5 +36,11 @@ def Pass_Standard_check(letters, numbers, symbols, final_pass):
         return(f"Your unscrambled password is {final_pass}")
 
 scramble = input("Would you like to scramble your password for increased security? Y or N")
+
+def scramble_pass():
+    if scramble == "Y":
+        print("!!!!!!!!!!!!!!!!!!!!!!!!")
+        # TODO: Scrambling happens here. 
+
 
 print(f"Your scrambled pass word is {scramble}")
