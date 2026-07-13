@@ -1,0 +1,30 @@
+# Convert to MD for layout options. 
+
+Project Roadmap
+
+1. Study Tracker CLI
+Complexity 1/10
+
+Goal: 
+Track study hours and certification progress
+
+Skills Learned:
+- argparse
+- JSON
+- datetime
+- file handling
+
+MVP (minimum viable product)
+- Add study session
+- View study session
+- Total hours
+
+Future Features 
+- Goals
+- Weekly Reports
+- Export data
+- Progress Tracking
+
+
+2. Personal Knowledge Base CLI
+Complexity 2/10
