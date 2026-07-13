@@ -15,7 +15,7 @@ numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 # IS there not an import for this?? Surely?? 
 
-# TODO: Generate Pass in Sequence | 
+# TODO: 
 # Then Add randomization | and Maybe total length(characters?)
 # Add a Salting Function, and then hashing algorithm. 
 # Maybe add a function to tell user, how long it would take to crack their password?
