@@ -28,3 +28,307 @@ Future Features
 
 2. Personal Knowledge Base CLI
 Complexity 2/10
+
+Goal: Store searchable notes.
+
+Skills Learned: 
+- CRUD Operations
+- JSON Storage
+- Search functions
+
+MVP:
+- Add note
+- List notes
+- Search notes.
+
+Future Features:
+- Tags
+- Categories
+- Markdown support.
+
+3. OC Health monitor
+Complexity 3/10
+
+Goal: Monitor local system performance
+
+Skills Learned:
+- psutil
+- logging
+- monitoring basics
+
+MVP:
+- CPU Usage
+- Memory Usage
+- Disk Usage
+- Uptime
+
+Future Features:
+- Historical data
+- Charts
+- Alerts
+- Reports
+
+4. Network Health Monitor
+Complexity 4/10
+
+Goal: Monitor network devices and connectivity. 
+
+Skilsl Learned:
+- Networking
+- ICMP
+- sockets
+- threading
+
+MVP:
+- ping hosts
+- check status
+- Display latency
+
+Future Features:
+- Packet loss
+- email Alerts
+- Dashboard
+- Historical trends
+
+5. Home Lab Documentation Generator
+Complexity 4/10
+
+Goal: Generate Documentation from homelab inventory data.
+
+Skills Learned:
+- JSON
+- YAML
+- Markdown generation
+
+MVP:
+- Generate Markdown documents
+- Generate infrastructure summaries
+
+Future Features
+- PDF Export
+- HTML Export
+- Network diagrams
+
+6. Password Audit Tool
+Complexity 5/10
+
+Goal: Evaluate Password security
+
+Skills Learned: 
+- Regular Expressions
+- Entropy Calculations
+- Security concepts
+
+MVP:
+- Length checking
+- Complexity checking
+- Strength Scoring
+
+Future Features
+- Dictionary detection
+- Pattern detection
+- Report generation
+
+7. File Integrity Monitor
+Complexity 6/10
+
+Goal: Detect if monitored files change
+
+Skills Learned:
+- SHA256
+- hashing
+- file monitoring
+
+MVP:
+- Create baseline
+- Create hashes
+- Compare changes
+
+Future Features: 
+- Real-time monitoring
+- Email Alerts
+- Change Reports
+
+8. Log Analyzer
+Complexity 6.5/10
+
+Goal: Analyze logs for useful information
+
+Skills Learned: 
+- Regex 
+- Log parsing
+- Security Analysis
+
+MVP:
+- Count events
+- Identify errors
+- Identify Top IPs
+
+Future Features:
+- Bruteforce detection
+- Threat indicators
+- Automated Reports
+
+9. Simple Vulneribility Scanner
+Complexity 7/10
+
+Goal: Identify open ports and services
+
+Skills Learned:
+- TCP/IP
+- sockets
+- service identification
+
+MVP:
+- Port scanning
+- Banner grabbing
+- Basic reporting
+
+Future Features:
+- Range scanning
+- CSV exports
+- Scheduling
+
+10. AWS Learning Assistant
+Complexity 7/10
+
+Goal: Support AWS certification study
+
+Skills Learned:
+- AWS services
+- Flashcard systems
+- Exam Tracking
+
+MVP:
+- Quiz mode
+- Flashcards
+- Progress Tracking
+
+Future Features:
+- Exam objectives
+- Weak area Tracking
+- Practice Exams
+
+11. AWS Resources Iventory Tool
+Complexity 8/10
+
+Goal: Inventory AWS Resources
+
+Skills Learned: 
+- boto3
+- IAM
+- AWS APIs
+
+MVP:
+- List EC2
+- List S3
+- List IAM Users
+
+Future Features: 
+- Cost reports 
+- Security Audits
+- Resource diagrams
+
+12. Linux Server Audit Tool
+Complexity 8/10
+
+Goal: Collect Linux system information
+
+Skills learned:
+- Linux administration
+- subprocess
+- system auditing
+
+MVP:
+- Users
+- Groups
+- services
+- Disk Usage
+
+Future Features:
+- Compliance Checks
+- Security auditing
+- reporting
+
+13. Bash + Python Automation Framework
+Complexity 8.5/10
+
+Goal: Run and manage Bash administrative scripts
+
+Skills Learned: 
+- Bash scripting
+- subprocess
+- Automation
+
+MVP: 
+- Run scripts
+- Collect output
+- Save reports
+
+Future Features: 
+- Scheduling
+- Log collection
+- Remote execution
+
+14. Powershell + Python Toolkit
+Complexity 9/10
+
+Goal: Manage Windows administrative tasks
+
+Skills Learned:
+- PowerShell
+- Windows administration
+- Automation
+
+MVP:
+- Run Powershell commands
+- generate reports 
+- Save system information
+
+Future Features:
+- Active Directory Reports
+- Event log Analysis
+- Compliation reporting
+
+15. Github project Tracker
+Complexity 9/10
+
+Goal: Track all development projects
+
+Skills Learned:
+- REST APIs
+- Authentication
+- Requests
+- Project management
+
+MVP:
+- Track repositories
+- Trask Issues
+- Track commits
+
+Future Features:
+- Dashboard
+- reporting
+- Release Tracking
+
+Final Goal:
+Throuhg completing the Angela Wu 100 days of Python and the above mentioned projects,
+I will have practical experience with all of the following:
+
+- Python
+- Git
+- GitHub
+- Documentation
+- Testing
+- Linux
+- Red Hat concepts
+- Bash
+- PowerShell
+- Networking
+- AWS
+- Cyber security
+- Automation
+- Software development lifecycle
+- Project planning
+- Version control
+
