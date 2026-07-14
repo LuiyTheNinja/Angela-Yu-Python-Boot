@@ -331,4 +331,3 @@ I will have practical experience with all of the following:
 - Software development lifecycle
 - Project planning
 - Version control
-
