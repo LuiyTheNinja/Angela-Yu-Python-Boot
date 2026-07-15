@@ -40,3 +40,7 @@ print(number)
 range(a, b, step) will not work on it's own, must be used with another function like above.
 last digit won't be included.
 the step argument is optional, but without, range iterates by 1.
+
+# While Loops
+
+while something_is_true:
