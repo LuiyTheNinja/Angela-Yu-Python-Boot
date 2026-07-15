@@ -2,19 +2,18 @@ import random
 # Inported random for random functions and library.
 
 word_list = ["aardvark", "baboon", "camel"]
-# included worllist with lesson
+# included wordlist with lesson
 
-# TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
+# =======================================================
+
+# TODO: wrong should be a _ line, and correctly guessed letter's should display
+# The program should loop and ask the player to guess until they guess wrong 5 times, in which case the man has "hanged"
+# Or the program should loop until the player has guessed all the letters in the word, in which case they "win"
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-# TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-
 guess = input("Guess a letter: ").lower()
-
-# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Print "Right" if it
-#  is, "Wrong" if it's not.
 
 for letter in chosen_word:
     if letter == guess:
