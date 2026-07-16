@@ -6,7 +6,7 @@ word_list = ["aardvark", "baboon", "camel"]
 
 # =======================================================
 
-# TODO: wrong should be a _ line, and correctly guessed letter's should display
+# TODO:
 # The program should loop and ask the player to guess until they guess wrong 5 times, in which case the man has "hanged"
 # Or the program should loop until the player has guessed all the letters in the word, in which case they "win"
 
@@ -15,8 +15,13 @@ print(chosen_word)
 
 guess = input("Guess a letter: ").lower()
 
+display = ""
+
 for letter in chosen_word:
     if letter == guess:
+        display += letter
         print("Right")
     else:
-        print("Wrong")
+        display += "_"
+
+print(display)
