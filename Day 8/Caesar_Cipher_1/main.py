@@ -4,4 +4,4 @@ shift = int(input("Type the shift number:\n"))
 
 encode_result = ""
 
-printf("The encoded result is: " + encode_result)
+print(f"The encoded result is: {encode_result}")
