@@ -6,6 +6,9 @@ word_list = ["aardvark", "baboon", "camel"]
 
 # =====================================================================
 
+# TODO: Link a wordlist and import above. 
+# Maybe add a hangman graphic to the game.
+
 chosen_word = random.choice(word_list)
 
 # For debugging purposes, you can uncomment the following line to see the chosen word.
@@ -27,7 +30,7 @@ while "".join(display) != chosen_word and counter < 5:
     else:
         print("Wrong guess!")
         counter += 1
-        
+
     print(f"Guesses used: {counter}/5")
     print("Current word: " + " ".join(display))
 
