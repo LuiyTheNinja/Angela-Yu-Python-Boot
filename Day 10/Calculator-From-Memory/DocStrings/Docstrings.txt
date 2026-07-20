@@ -1,0 +1,11 @@
+Basically a way of creating bits of documenation as we are writing code. 
+
+Doc string must be the first line after the declaration of a function
+""" Documenation here """
+Ex:
+def function():
+  """ Documenation here """
+
+With this, we can write strings that are multiple lines.
+
+This can also be used as a multi line comment. 
