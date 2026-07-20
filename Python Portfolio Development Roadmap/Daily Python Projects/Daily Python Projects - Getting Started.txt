@@ -1,0 +1,337 @@
+Project-Based Learning Roadmap
+
+Do you want to learn Python by doing projects but don’t know which project to start with?
+
+We've got you covered. We have handpicked 20 beginner projects for you from our project archive, starting from the easiest ones to more challenging ones. Try completing them in the given order.
+
+Count Words in a Sentence with Python
+Concepts included: input() | split() | len() | max() | print() | f-strings
+
+Simple Dice Rolling Simulator
+Concepts included: randint() | print() | f-strings()
+
+Count Uppercase and Lowercase Letters in String
+
+Concepts included: strings | for-loop | isupper() | islower() | +=operator() | print() | f-strings()
+
+Generate Random Person Name
+Concepts included: open(): | readlines() | list-comprehension | random.choice() | print()
+
+Algorithm to Count Vowels and Consonants in a String
+Concepts included: lower() | for-loop | in-keyword | +=operator | print() | f-strings()
+
+Create a Function That Checks Username Validity
+
+Concepts included: len() | isalnum() | isalpha()
+
+Algorithm to Count Vowels in a String
+
+Concepts included: for-loop | in-keyword | print() | f-strings()
+
+Algorithm to find the maximum of three numbers
+Concepts included: if-elif-else | comparison-operators | print() | f-strings()
+
+Simple Text-Based Calculator with Python
+Concepts included: input() | if-elif-else | float() | print()
+
+Check if number is negative or positive with Python
+
+Concepts included: input() | float() | match-case | print()
+
+Calculate the Area of a Circle with Python
+Concepts included: input() | float() | math.pi | **exponentiation-operator | round() | print() | f-strings()
+
+Generate Text Files with Random Names
+
+Concepts included: random.choices() | with-open() | f-strings() | write() | print()
+
+Maximum Number from a Text File
+
+Concepts included: input() | float() | max() | print()
+
+Calculate the Average of Numbers Submitted by the User
+
+Concepts included: input() | float() | arithmetic-operations | round() | print()
+
+Check if a Number is Even or Odd with Python
+
+Concepts included: input() | int() | modulo-operator-% | if-elif-else | print()
+
+Store multiple lines in text file with Python
+Concepts included: open() | with-open() | input() | write() | if-elif-else
+
+Area and Perimeter Calculator with Python
+Concepts included: arithmetic-operations | print()
+
+Build an Age Calculator with Python
+
+Concepts included: input() | int() | arithmetic-operations | f-strings() | print()
+
+String Manipulations on User Input
+Concepts included: input() | upper() | lower() | replace() | len() | print()
+
+Count Uppercase and Lowercase Letters in String
+
+Concepts included: for-loop | if-elif-else | print()
+
+
+input()
+This function is perfect for getting information directly from the user. You can ask them to type something, like their name, and store it in a variable to use later in your code. Here’s how it works:
+
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+Here, the program will greet the user by name after they enter it. It’s an easy way to make your program interactive!
+
+split()
+Ever need to break a sentence into individual words? split() is your friend! It takes a string and turns it into a list of words, which makes it easy to analyze or process each word separately. For instance:
+
+words = "Hello World".split() print(words) 
+# Output: ['Hello', 'World']
+In this example, split() divides "Hello World" into a list with each word as a separate item.
+
+len()
+This function counts the number of elements in a list, which is useful if you need to check how many items you’re working with. Let’s say we have a list of fruits:
+
+fruits = ["apple", "banana", "cherry"] 
+print(len(fruits)) 
+# Output: 3
+The output here is 3 because there are three items in the fruitslist. It’s great for looping or checking if a list is empty.
+
+max()
+Need to find the biggest number in a list? max() makes it simple. It goes through each item in the list and returns the highest value. Here’s an example:
+
+numbers = [10, 20, 30] 
+print(max(numbers)) 
+# Output: 30
+This is especially useful in cases where you’re working with a range of numbers and want to quickly find the largest one.
+
+print()
+This is a core function that displays information on the screen. It’s how you communicate results or updates to the user. Here’s a classic example:
+
+print("Hello, World!") 
+# Output: Hello, World!
+Whatever you place inside print() will appear in the console, which is perfect for testing and giving users feedback.
+
+f"…” strings
+F-strings let you embed variables directly within a string, making it easier to create dynamic, personalized messages. By adding an f before the quotation marks, we can insert variables like {uppercase_count} and {lowercase_count} right into the sentence.
+
+uppercase_count = 5
+print(f"The number of uppercase letters is: {uppercase_count}")
+Here, {uppercase_count} will be replaced with the variable’s value, creating a clear and customized message for the user.
+
+randint()
+With randint(a, b), you can create a random integer between a and b (both inclusive). Imagine rolling a dice where you want a number between 1 and 6 to show up—randint(1, 6) does exactly that! Each time you call it, Python will pick a number between the two given values.
+
+dice_roll = random.randint(1, 6)
+print(dice_roll)
+In this example, dice_roll will hold a random number from 1 to 6, just like the outcome of a dice roll!
+
+strings
+A string is a sequence of characters enclosed in quotes. It’s perfect for storing and manipulating text data, like sentences. In this case, we’re storing a sentence that has both uppercase and lowercase letters, which we’ll analyze to count the cases.
+
+text = "This is an example string."
+print(text)
+Here, text holds the value "This is an example string." which we can use throughout our program. Defining a string is the first step in working with text data in Python.
+
+for-loop
+A for loop lets you iterate over each character in a string. With for char in text:, we can look at each letter in textone by one. This is useful when you want to analyze each character individually, like checking if it’s uppercase or lowercase.
+
+for char in "Hello":
+    print(char)
+This loop will print each letter in "Hello" on a new line: H, e, l, l, o. It’s a great way to process each character in a string.
+
+isupper() and slower()
+The isupper() and islower() methods are built-in string functions that check the case of each character.
+
+char.isupper() returns True if char is an uppercase letter.
+
+char.islower() returns True if char is a lowercase letter.
+
+Using these, we can tell if each letter in our sentence is uppercase or lowercase, which makes it easy to count them.
+
+print("A".isupper())  # Output: True
+print("a".islower())  # Output: True
+These functions allow you to work with different cases in a straightforward way.
+
++= operator:
+The += operator is a shorthand for adding a value to an existing variable. In this program, uppercase_count += 1 means “add 1 to the current value of uppercase_count.” This is useful for counting items like uppercase or lowercase letters, as it keeps a running total.
+
+count = 0
+count += 1  # Now count is 1
+count += 2  # Now count is 3
+This operator simplifies updating values, making counting quick and easy.
+
+open()
+The open() function is used to open a file, allowing your program to read from or write to it. Here, we open the names.txt file in "read" mode ("r"), which means we’ll only be reading data, not modifying it. The with keyword is used to handle the file safely—it automatically closes the file when we’re done.
+
+with open("example.txt", "r") as file:
+    data = file.read()
+    print(data)
+In this example, we read the contents of example.txt and print them to the screen. The with statement ensures that fileis closed when we’re finished, making our code more reliable.
+
+readlines()
+The readlines() method reads all lines from a file and returns them as a list of strings, where each line is a separate item in the list. It’s useful when you want to work with each line individually.
+
+lines = file.readlines()
+print(lines)
+If the file has three lines, readlines() will return them as ["First line\n", "Second line\n", "Third line\n"]. Notice the \n, which represents the newline character at the end of each line.
+
+list-comprehension
+
+List comprehensions offer a clean, concise way to process items in a list. Here, it’s used to modify and filter the data in one line.
+
+names = [" Alice ", "Bob ", " Carol\n"]
+cleaned_names = [name.strip().lower() for name in names]
+This list comprehension removes extra spaces and converts each name to lowercase, resulting in ['alice', 'bob', 'carol'].
+
+random.choice()
+The random.choice() function is perfect for selecting a random item from a list. Here, it picks one name from the nameslist, simulating a random draw.
+
+import random
+names = ["Alice", "Bob", "Charlie"]
+random_name = random.choice(names)
+print(random_name)
+Each time you run this code, random_name will contain one randomly chosen name from the list, adding an element of surprise to the program.
+
+lower()
+The lower() method converts all uppercase letters in a string to lowercase. By using text.lower(), we make sure that both uppercase and lowercase vowels (e.g., "A" and "a") are counted accurately. This simplifies our comparisons by making the entire string lowercase.
+
+print("HELLO".lower())  # Output: "hello"
+Using lower() means we don’t need to check separately for uppercase vowels or consonants.
+
+in-keyword
+The in keyword checks if a character is part of a specified set of characters. For example, char in "aeiou" checks if char is a vowel. This lets us categorize each character quickly and accurately.
+
+print('a' in "aeiou")  # Output: True
+print('z' in "aeiou")  # Output: False
+Using in allows us to compare a character against a group (like vowels or consonants) in one line.
+
+isalnum()
+The isalnum() method checks if all characters in the string are either letters or numbers. If isalnum() returns False, the username is invalid, and a message is returned.
+
+print("User123".isalnum())  # Output: True
+print("User_123".isalnum())  # Output: False
+Here, "User123" is valid, but "User_123" would not be because it contains an underscore, which is not alphanumeric.
+
+isalpha()
+This condition checks if the first character of the username is a letter. The isalpha() method returns True if a character is alphabetic and False otherwise. If the username starts with a number or other non-alphabetic character, we return a message explaining that it must start with a letter.
+
+print("U".isalpha())  # Output: True
+print("1".isalpha())  # Output: False
+This ensures that "User123" would pass, while "123User" would not, as the first character must be a letter.
+
+if-elif-else Statements
+The if-elif-else structure is essential for making decisions in code. It allows us to run certain blocks of code only if specific conditions are met. Here, we use if-elif-else to determine which of the three numbers is the largest.
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+Using if-elif-else here helps ensure that only one of the three numbers will be identified as the largest.
+
+comparison-operators (>=)
+Comparison operators like >= allow us to compare two values and return a True or False result. Here, >= checks if a number is greater than or equal to another, which is helpful when comparing numbers to find the maximum.
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+By using >= instead of just >, the program can handle cases where two or more numbers are equal, treating them fairly in the comparison.
+
+float()
+The float() function converts user input into a floating-point number, allowing us to work with decimals instead of just integers.
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+By using float(), this program can handle decimal inputs like 12.5 or 3.14, making it a more flexible calculator.
+
+match-case
+The match-case statement is used to evaluate the value of number and determine whether it's positive, negative, or zero. This is a Python 3.10+ feature that provides a more readable alternative to if-elif-else in certain cases.
+
+match number:
+    case n if n > 0:
+        result = "The number is positive."
+    case n if n < 0:
+        result = "The number is negative."
+    case _:
+        result = "The number is zero."
+match number:: Starts the match statement to evaluate the value of number.
+
+case n if n > 0:: Checks if number is greater than zero, in which case it sets result to "The number is positive."
+
+case n if n < 0:: Checks if number is less than zero, in which case it sets result to "The number is negative."
+
+case _:: The underscore (_) is a wildcard that matches any value not covered by previous cases, which here means number is zero. This sets result to "The number is zero."
+
+math.pi
+
+The math module provides the value of π (pi), which is needed for the area formula. By using math.pi, we avoid hard-coding the value of pi, which improves accuracy and readability.
+
+import math
+With math.pi, we use Python’s internal, precise value of pi.
+
+**exponentiation-operator
+The ** operator raises a number to a power. In this case, it squares the radius (radius ** 2), which is part of the area formula for a circle.
+
+area = math.pi * radius ** 2
+This line calculates the area of the circle by using the formula π * r^2.
+
+round()
+The round() function is used to round the result to two decimal places, making the output more readable and better suited for most uses.
+
+rounded_area = round(area, 2)
+Here, round(area, 2) rounds the area to two decimal places, assigning the result to rounded_area.
+
+random.choices()
+The random.choices() function generates a list of random elements from a specified sequence, with the option to choose multiple items (using k).
+
+random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+This line creates a random string of 10 characters by choosing randomly from letters and digits, then joins them into a single string using ''.join().
+
+with-open()
+The with open() statement opens a file and ensures it closes properly after writing, making the file handling safer and easier.
+
+with open(file_name, "w") as file:
+    file.write(random_string)
+The w mode allows us to write to the file, and here we write the generated random_string inside the file.
+
+write():
+
+The write() function writes data to a file. In this case, it saves the random string into the newly created file.
+
+file.write(random_string)
+This places the string directly into the file.
+
+arithmetic-operations
+In Python, you can perform arithmetic operations like addition (+), subtraction (-), multiplication (*), and division (/). These operations allow you to manipulate numbers for different calculations.
+
+apples = 10
+oranges = 15
+total_fruits = apples + oranges
+Here, total_fruits would be 25 (the sum of apples and oranges).
+
+int():
+
+The int() function converts a value (such as a string or float) to an integer. This is especially useful when you need to perform mathematical operations or comparisons, as you may need to convert user input or other data into numeric form.
+
+number_str = "23"
+number_int = int(number_str)
+Here, the string "23" is converted into the integer 23, making it ready for calculations or comparisons.
+
+modulo-operator-%
+The modulo operator (%) is used to find the remainder when one number is divided by another. It’s very useful for determining whether a number is divisible by another number—such as checking if a number is even or odd.
+
+remainder = 10 % 3  
+# This will return 1, because 10 divided by 3 leaves a remainder of 1.
+upper()
+The .upper() method is used to convert a string to all uppercase letters. This can be useful for standardizing text, such as formatting names or inputs.
+
+text = "hello" print(text.upper()) 
+# Output: "HELLO"
+replace()
+The replace() method is used to replace all occurrences of a specified substring with another substring.
+
+sentence = "I love Python"
+print(sentence.replace("love", "enjoy")) 
+
+# Output: "I enjoy Python"
