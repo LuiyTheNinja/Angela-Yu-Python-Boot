@@ -1,0 +1,81 @@
+Dictionaries ========================================================================================================
+
+# Dictionary {Key: Value}
+# Ex: {"Bug" : "An error in a program that prevents the program from running as expected."}
+# Seperate each key and value pair with a comma and enclose the entire dictionary in curly braces.
+#Ex: {"Bug" : "An error in a program that prevents the program from running as expected.", 
+#    "Function" : "A block of code that performs a specific task."}
+
+# Retreiving an item from a dictionary
+# To retrieve an item from a dictionary, you can use the key associated with the value you
+# want to retrieve. For example, if you have a dictionary called "my_dict" and you want to retrieve the value associated with the key "Bug", you would use the following syntax: my_dict["Bug"].
+# Ex: print(my_dict["Bug"]) would return "An error in a program that prevents the program from running as expected."
+
+# Adding a piece of data programmatically to a dictionary
+# My_dict[key] = value
+# ex: my_dict["New Key"] = "New Value" would add a new key-value pair to the dictionary.
+
+# We can create an empty dictionary and add key-value pairs to it programmatically. For example:
+# my_dict = {}
+# my_dict["Bug"] = "An error in a program that prevents the program from running"
+
+# Wiping an existing dictionary
+# my_dict = {} would wipe the existing dictionary and create a new empty dictionary.
+# Uses: Clearing a users progress, a game restarts, and inventory / stats resets.
+
+# Edit an item in a dictionary
+# To edit an item in a dictionary, you can use the key associated with the value you want to edit. 
+# For example, if you have a dictionary called "my_dict" and you want to edit 
+# the value associated with the key "Bug", you would use the following syntax: my_dict["Bug"] = "New Value".
+
+# Looping through a dictionary
+# for key in my_dict:
+#   print(key)
+#   print(my_dict[key])
+
+Nesting Lists and Dictionaries ============================================================================================
+
+{ 
+  key: [list],
+  key: {dict}
+}
+
+# Structure becomes a little more complex, but provides more flexibility when storing more complex pieces of data. 
+
+# Ex:
+
+travel_log = {
+  "France": ["Paris", Lille", "Dij"]
+}
+
+# How would I print the Lille string from this travel_log dictionary?
+
+print(travel_log["France"][1]) # calls the travel_log dictionary, then to pull from the list, we use the index of the wanted item, in another set of brackets []
+
+Nested Lists ===============================================================================================================
+
+nested_list = ["A", "B", ["C", "D"]]
+
+# How would I print the Letter "D" from this nested list?
+
+print(nested_list[2][1])
+
+Nested Dictionaries ========================================================================================================
+
+travel_log{
+  "France": {
+    "cities_visited": ["Paris", Lille", "Dij"],
+    "total_visits": 5,
+  },
+  "Germany": {
+    "cities_visited": ["Munich", "Berlin", "Hamburg"],
+    "total_visits": 4
+  }
+}
+
+list, listed inside a dictionary inside another dictionary
+# How would I print an item from this travel log?
+
+print(travel_log["France]["cities_visited][1]) = For "Lille"????
+
+Yes!
