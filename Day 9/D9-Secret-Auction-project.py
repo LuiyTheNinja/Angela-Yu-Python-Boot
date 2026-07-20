@@ -5,7 +5,7 @@ print(art.logo)
 
 # TODO-1: Ask the user for input = DONE
 # TODO-2: Save data into dictionary {name: price} = DONE
-# TODO-3: Whether if new bids need to be added = DONE
+# TODO-3: Whether if new bids need to be added - Does this mean, the bids should only hold onto the largest bid? or should it hold onto all the bids? 
 # TODO-4: Compare bids in dictionary 
 
 
