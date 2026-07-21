@@ -1,0 +1,1 @@
+Why does this only run when ran in debug python file mode????
