@@ -44,3 +44,19 @@ the step argument is optional, but without, range iterates by 1.
 # While Loops
 
 while something_is_true:
+
+# Global variables
+
+use Global keyword inside a function, to pull variable names from base, to be modified and used.
+Don't do often, confusing, and prone to bugs and errors.
+Avoid modifying, using is fine, and read it, etc
+
+# Global constant
+
+Values never intended to change.
+Example - The value of pi.
+The naming convention for this, is all uppercase seperated with underscores.
+EX:
+PI = 56587106
+GOOGLE_URL = http:// etc
+Then when calling it later, we see it is all Caps and we know, we don't modify it.
