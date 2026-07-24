@@ -13,3 +13,4 @@
 # 3. Turn the Prolem into comments 
 # 4. Write Code (Beneath the related comments) --> Run Code --> Debug Code
 # 5. NExt Task | One task at a time, easiest to hardest. 
+# Don't forget to import game data and art. 
